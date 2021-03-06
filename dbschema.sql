@@ -2,7 +2,8 @@ CREATE DATABASE inventory;
 
 CREATE TABLE catagory (
     id SERIAL UNIQUE PRIMARY KEY,
-    name varchar
+    name varchar,
+    archived boolean
 );
 
 CREATE TABLE catalog (
@@ -13,7 +14,8 @@ CREATE TABLE catalog (
     created_by integer,
     item_picture varchar,
     quantity int,
-    catagory integer
+    catagory integer,
+    last_updated timestamp
 );
 
 CREATE TABLE stock (

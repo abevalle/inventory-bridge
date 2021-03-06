@@ -1,0 +1,14 @@
+version: '2.2'
+
+services:
+  inventory-bridge:
+    network_mode: bridge
+    image: debian
+    environment:
+      - PGHOST=10.28.0.202
+      - PGDATABSE=inventory
+      - PGUSER=inventory
+      - PGPASSWORD=devpass
+      - PORT=3548
+    volumes:
+      - /home/abe/code/inventory-bridge:/opt/inventory-bridge

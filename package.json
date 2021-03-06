@@ -1,0 +1,29 @@
+{
+  "name": "inventory-bridge",
+  "version": "0.0.1",
+  "description": "POC inventroy middleware",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "nodemon src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abevalle/inventory-bridge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abevalle/inventory-bridge/issues"
+  },
+  "homepage": "https://github.com/abevalle/inventory-bridge#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "pg": "^8.5.1"
+  },
+  "devDependencies": {
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.3"
+  }
+}

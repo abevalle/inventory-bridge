@@ -2,7 +2,9 @@ version: '2.2'
 
 services:
   bridge:
-    image: debian
+    build: .
+    stdin_open: true
+    tty: true
     restart: always
     volumes:
       - /home/abe/code/inventory-bridge:/opt/inventory-bridge
@@ -12,4 +14,5 @@ services:
       - PGUSER=inventory
       - PGPASSWORD=devpass
       - PORT=3548
+      - NODE_ENV=development
     network_mode: bridge 
